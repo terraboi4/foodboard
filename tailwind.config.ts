@@ -15,6 +15,24 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  rippleui: {
+		themes: [
+			{
+				themeName: "light",
+				colorScheme: "light",
+				colors: {
+					warning: "cd7f32"
+				},
+			},
+			{
+				themeName: "dark",
+				colorScheme: "dark",
+				colors: {
+					warning: "cd7f32"
+				},
+			},
+		],
+	},
+  plugins: [require('rippleui')],
 }
 export default config
